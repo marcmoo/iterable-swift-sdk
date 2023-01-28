@@ -532,7 +532,7 @@ class InAppManager: NSObject, IterableInternalInAppManagerProtocol {
     private var syncResult: Pending<Bool, Error>?
     private var lastSyncTime: Date?
     private var moveToForegroundSyncInterval: Double = 1.0 * 60.0 // don't sync within sixty seconds
-    private var autoDisplayPaused = false
+    private var autoDisplayPaused = true
 }
 
 extension InAppManager: InAppNotifiable {
